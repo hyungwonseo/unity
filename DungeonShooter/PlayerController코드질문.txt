@@ -1,0 +1,14 @@
+<PlayerController>
+1. 오른쪽키와 아래키를 동시에 눌러서 오른쪽아래로 내려오는
+애니메이션이 현재 Right이미지임. 이것을 Down이미지로 변경
+
+2. inDamage 플래그를 사용하는 이유는?
+
+3. inDamage 플래그가 true로 세팅되고 다시 false로 바뀌는
+인터벌 시간은 몇초?
+
+4. GetDamage함수안에서 아래 두 코드의 차이점은?
+Vector3 toPos = (transform.position - enemy.transform.position).normalized;
+
+Vector3 toPos = (enemy.transform.position - 
+transform.position).normalized;
