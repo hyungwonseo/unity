@@ -1,0 +1,13 @@
+<ArrowShoot.cs>
+1. //활의 회전과 우선순위
+ float bowZ = -1;    //활의 Z값(캐릭터보다 앞으로 설정)
+ PlayerController plmv = GetComponent<PlayerController>();
+ if (plmv.angleZ > 30 && plmv.angleZ < 150)
+ {
+     bowZ = 1;       //활의 Z값(캐릭터 보다 뒤로 설정)
+ }
+: z축의 위치로 2D이미지의 앞뒤를 표시하는 코드인데, 2D
+게임의 경우 SpriteRenderer 컴포넌트의 sorting order를
+이용하는 것이 일반적이므로 sort in layer 값을 변경하도록
+코드 수정!! 
+(플레이어가 3이므로 경우에따라 2 또는 4로 변경)
